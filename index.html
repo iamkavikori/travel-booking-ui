@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✈️ Travel Booking UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button id="darkModeToggle">🌙 Dark Mode</button>
+
+  <header class="hero">
+    <h1>Explore & Book Your Dream Trip</h1>
+    <p>Find the best flights and travel deals easily.</p>
+    <a href="#booking" class="btn">Start Booking</a>
+  </header>
+
+  <section id="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destinations-container">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?paris" alt="Paris">
+        <h3>Paris</h3>
+        <p>Romantic city of lights.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?bali" alt="Bali">
+        <h3>Bali</h3>
+        <p>Tropical paradise awaits you.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?newyork" alt="New York">
+        <h3>New York</h3>
+        <p>The city that never sleeps.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>Flight Price Calculator</h2>
+    <form id="priceForm">
+      <select id="airline">
+        <option>IndiGo</option>
+        <option>Air India</option>
+        <option>SpiceJet</option>
+        <option>Vistara</option>
+      </select>
+      <select id="source">
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Bangalore</option>
+        <option>Kolkata</option>
+      </select>
+      <select id="destination">
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Bangalore</option>
+        <option>Kolkata</option>
+      </select>
+      <input type="number" id="duration" placeholder="Duration (minutes)">
+      <input type="number" id="stops" placeholder="Total Stops (0-2)">
+      <button type="button" id="predictBtn" class="btn">Estimate Price</button>
+    </form>
+    <h3 id="result">💰 Estimated Price: --</h3>
+  </section>
+
+  <footer>
+    <p>✈️ Travel Booking UI | Made by Kavita Kori</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
